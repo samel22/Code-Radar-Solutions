@@ -1,5 +1,5 @@
 #include <stdio.h>
-main() {
+int main() {
     int a,b,ans;
     scanf("%d %d",&a,&b);
     ans=a << b;
