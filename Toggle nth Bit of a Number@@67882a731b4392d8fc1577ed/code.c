@@ -3,7 +3,7 @@ int main() {
     int number,n;
     scanf("%d %d",&number, &n);
     number = number ^ (1 << n);
-    printf("d",number);        //number=7 (111), position=0bits, flip last 1 to 0, output- 110
+    printf("%d",number);        //number=7 (111), position=0bits, flip last 1 to 0, output- 110
     return 0;                 //number=10 (1010), position=1bit, flip last 2 digits, output- 1000 (8)
 }                             //1010- 1(3rd bit), 0(2nd bit), 1(1st bit)- - - - -
 
