@@ -6,7 +6,7 @@ int main() {
         printf("Uppercase");
     }
     else if(islower(c)){
-        printf("Lowecase");
+        printf("Lowercase");
     }
 
     return 0;
