@@ -11,7 +11,7 @@ int main() {
         printf("Go");
         break;
 
-        case 'y':
+        case 'Y':
         printf("Slow Down");
         break;
 
