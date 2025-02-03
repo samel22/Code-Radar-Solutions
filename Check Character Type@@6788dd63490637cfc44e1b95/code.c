@@ -3,7 +3,7 @@ int main() {
     char ch;
     scanf("%c",&ch);
     if(ch>='0' && ch<='9'){
-        printf("%c",ch);
+        printf("Digit");
     }
     else if(isalpha(ch)){
         ch=tolower(ch);
@@ -13,6 +13,9 @@ int main() {
         else{
             printf("Consonant");
         }
+    }
+    else{
+        printf("Special character");
     }
     return 0;
 }
