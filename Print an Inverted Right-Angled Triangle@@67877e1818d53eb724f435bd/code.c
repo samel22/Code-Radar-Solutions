@@ -3,8 +3,8 @@ int main() {
     int i,j,n;
     scanf("%d",&n);
     for(i=n;i>=1;i--){ //i=5,i=4,----i=1; (n=5)
-        for(j=1;j<=i;j++) //for i=5, j=1,2,3,4,5(means star occurs in 1-5 columns)
-        printf("* ");
+        for(j=1;j<=i;j++){ //for i=5, j=1,2,3,4,5(means star occurs in 1-5 columns)
+        printf("* ");}
     }
     printf("\n");
     return 0;
