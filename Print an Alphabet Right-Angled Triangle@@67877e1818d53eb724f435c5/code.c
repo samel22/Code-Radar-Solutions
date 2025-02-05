@@ -9,7 +9,7 @@ int main() {
             char ch=(char)d;
             printf(" %d",ch);
         }
-        printf("/n");
+        printf("\n");
     }
     return 0;
 }
