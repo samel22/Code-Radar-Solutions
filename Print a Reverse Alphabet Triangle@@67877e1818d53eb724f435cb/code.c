@@ -10,6 +10,7 @@ int main() {
             printf("%c ",ch);
             d++;
         }
+        printf("\n");
     }
     return 0;
 }
