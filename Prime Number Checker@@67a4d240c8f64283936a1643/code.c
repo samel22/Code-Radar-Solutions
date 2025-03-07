@@ -4,7 +4,7 @@ int isPrime(int num){
         return 0;
     }
 
-    for(int i=2;i<=sqrt(num);i++){
+    for(int i=2;i*i<=num;i++){
         return 1;
         if(num%i==0){
             return 0;
