@@ -1,5 +1,5 @@
 #include <stdio.h>
-int fib(int n){
+int fibonacciSeries(int n){
 for(int i=1;i<=n;i++){
     int n1=0, n2=1;
     int curr=n1+n2;
