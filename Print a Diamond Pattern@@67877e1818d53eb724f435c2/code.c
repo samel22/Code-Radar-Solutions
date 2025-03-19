@@ -1,27 +1,25 @@
 int main(){
-    int n;
+    int n, nsp=n/2, nst=1, ml=n/2 + 1; //ml=middle line
     scanf("%d",&n);
 
-    //top
-    for(int i=1;i<=n;i++){
-        for(int space=1;space<=n-i;space++){
-            printf(" ");
-        }
-        for(int j=1;j<=2*i-1;j++){
-            printf("*");
-        }
-        printf("\n");
+for(int i=1;i<=n;i++){
+    for(int j=1;j<=nsp;j++){
+        printf(" ");
     }
 
-    //bottom
-    for(int i=n-1;i>=1;i--){
-        for(int space=1;space<=n-i;space++){
-            printf(" ");
-        }
-        for(int j=1;j<=2*i-1;j++){
-            printf("*");
-        }
-        printf("\n");
+    for(int k=1;k<=nst;k++){
+        printf("*");
     }
-   return 0;
+
+    if(i<ml){//upper
+        nsp--;
+        nst+=2
+    }
+
+    else{//lower
+        nsp++;
+        nst-=2;
+    }
+    printf("\n");
+}
 }
