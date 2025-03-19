@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main(){
     int n, nsp=n/2, nst=1, ml=n/2 + 1; //ml=middle line
     scanf("%d",&n);
