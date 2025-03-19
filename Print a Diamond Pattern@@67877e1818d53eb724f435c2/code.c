@@ -14,7 +14,7 @@ for(int i=1;i<=n;i++){
 
     if(i<ml){//upper
         nsp--;
-        nst+=2
+        nst+=2;
     }
 
     else{//lower
