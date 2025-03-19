@@ -8,7 +8,7 @@ int main() {
 
         for(j=1;j<=i;j++){
             printf("%d",a);
-            if(j<i) printf(" ");
+            if(j<i) printf(" "); //print space after each j value except last
             if (a==0) a=1;
             else a=0;
         }
