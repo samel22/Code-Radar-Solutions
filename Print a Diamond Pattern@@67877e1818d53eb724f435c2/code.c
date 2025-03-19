@@ -12,6 +12,8 @@ for(int i=1;i<=2*n-1;i++){
         printf("*");
     }
 
+    printf("\n");
+
     if(i<ml){//upper
         nsp--;
         nst+=2;
@@ -22,6 +24,7 @@ for(int i=1;i<=2*n-1;i++){
         nst-=2;
     }
 
-    printf("\n");
 }
+}
+return 0;
 }
