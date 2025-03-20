@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    int s=1,n, nsp=n-1;
+    int s,n, nsp=n-1;
 scanf("%d",&n);
 for(int i=1;i<=n;i++){
     for(int j=1;j<=nsp;j++){
@@ -8,6 +8,7 @@ for(int i=1;i<=n;i++){
     }
     nsp--;
 
+    s=1;
     for(int k=1;k<=i;k++){
         printf("%d",s);
         s++;
