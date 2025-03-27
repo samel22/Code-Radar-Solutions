@@ -1,6 +1,6 @@
 void max(int n,int arr[]){
-    intmax=arr[0];
-    intmin=arr[0];
+    int intmax=arr[0];
+    int intmin=arr[0];
     for(int i=0;i<n;i++){
         if(arr[i]>intmax){
             intmax=arr[i];
@@ -22,4 +22,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+
+    max(n.arr);
     }
