@@ -9,7 +9,7 @@ int isPrime(int n){
 }
 void printPrimesInRange(int a, int b){
     for(int i=a;i<=b;i++){
-        if(isPrime(i)) printf(" %d",i);
+        if(isPrime(i)) printf("%d ",i);
     }
     printf("\n");
 }
