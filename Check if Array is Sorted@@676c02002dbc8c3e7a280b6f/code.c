@@ -4,7 +4,7 @@ void inc(int n, int arr[]){
         if(arr[i]>=arr[i+1]) printf("Not Sorted")
     }
 }
-printf("Sorted")
+printf("Sorted");
 
 int main(){
     int n;
