@@ -1,3 +1,4 @@
+#include <stdio.h>
 void number(int n, int arr[]){
     int counte=0, counto=0;
     for(int i=0;i<n;i++){
