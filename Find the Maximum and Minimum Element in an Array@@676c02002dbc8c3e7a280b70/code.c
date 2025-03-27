@@ -11,7 +11,7 @@ void max(int n,int arr[]){
             intmin=arr[i];
         }
     }
-    printf("%d",intmax);
+    printf("%d %d",intmin,intmax);
 
 }
 
