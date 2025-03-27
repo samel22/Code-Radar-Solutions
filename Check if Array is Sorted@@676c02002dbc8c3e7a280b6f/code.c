@@ -1,4 +1,4 @@
-void inc(){
+void inc(int n, int arr[]){
     for(int i=0;i<n;i++){
         if(arr[i+1]>arr[i]) printf("Sorted");
     }
@@ -10,4 +10,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+
+    inc(n,arr);
 }
