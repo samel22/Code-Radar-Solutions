@@ -1,3 +1,4 @@
+#include <stdio.h>
 void mid(int n, int arr[]){
     int med=(0+n-1)/2;
     printf("%d",arr[med]);
