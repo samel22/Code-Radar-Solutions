@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-void isprime(int n){
+int isprime(int n){
     if(n<=1) return 0;
 
     for(int i=2;i<=sqrt(n);i++){
