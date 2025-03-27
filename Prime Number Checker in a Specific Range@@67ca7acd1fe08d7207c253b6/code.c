@@ -8,9 +8,14 @@ int isPrime(int n){
     return 1;
 }
 void printPrimesInRange(int a, int b){
+    int found=0;
     for(int i=a;i<=b;i++){
-        if(isPrime(i)) printf("%d ",i);
+        if(isPrime(i)) {
+            printf("%d ",i);
+            found=0;
+        }
     }
+    if(!found) printf("No prime numbers");
     printf("\n");
 }
 
