@@ -7,7 +7,7 @@ void max(int n,int arr[]){
 
         }
 
-        else if(arr[i]<intmix){
+        else if(arr[i]<intmin){
             intmin=arr[i];
         }
     }
