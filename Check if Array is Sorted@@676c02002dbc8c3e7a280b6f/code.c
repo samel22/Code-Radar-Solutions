@@ -7,8 +7,9 @@ void inc(int n, int arr[]){
         }
 
     }
-}
+
 printf("Sorted");
+}
 
 int main(){
     int n;
