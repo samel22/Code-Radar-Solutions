@@ -6,7 +6,7 @@ void number(int n, int arr[]){
         else if(arr[i]%2!=0) counto+=1;
     }
     printf("%d",counte);
-    printf("%d",counto);
+    printf(" %d",counto);
 
 }
 
