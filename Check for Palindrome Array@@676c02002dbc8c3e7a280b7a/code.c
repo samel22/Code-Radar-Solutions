@@ -1,6 +1,6 @@
 #include <stdio.h>
 void pal(int arr[], int N){
-    int i=0,j=n-1, ispal=1;
+    int i=0,j=N-1, ispal=1;
     while(i<j){
         if(arr[i] != arr[j]){
             ispal=0;
@@ -11,11 +11,11 @@ void pal(int arr[], int N){
     }//while loop closes
 
     if(ispal==1){
-        printf("palindrome");
+        printf("YES");
     }
 
     else{
-        printf("not pal");
+        printf("NO");
     }
 }
 
