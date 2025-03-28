@@ -27,9 +27,9 @@ int main(){
 
     K=K%N;
 
-    rotate(arr,0,N-1);
-    rotate(arr,0,K-1);
-    rotate(arr,K,N-1);
+    rotate(arr,0,N-1);//Reversing full array
+    rotate(arr,0,K-1);//reversing first k elements
+    rotate(arr,K,N-1);//rev rest
 
     display(arr,N);
 }
