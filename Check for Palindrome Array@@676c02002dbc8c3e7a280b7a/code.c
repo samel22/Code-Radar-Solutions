@@ -27,5 +27,5 @@ int main() {
           scanf("%d",&arr[i]);
       }
 
-      pal(arr,n);
+      pal(arr,N);
 }
