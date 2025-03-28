@@ -11,7 +11,7 @@ void rotate(int arr[], int si, int ji){
 
 void display(int arr[], int N){
     for(int i=0;i<N;i++){
-        printf("%d",arr[i]);
+        printf("%d\n",arr[i]);
     }
 }
 
@@ -28,4 +28,6 @@ int main(){
     rotate(arr,0,N-1);
     rotate(arr,0,mid-1);
     rotate(arr,mid-1,N-1);
+
+    display(arr,N);
 }
