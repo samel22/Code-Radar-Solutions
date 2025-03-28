@@ -18,12 +18,13 @@ void display(int arr[], int N){
 int main(){
     int N,K;
     scanf("%d",&N);
-    int mid=N/2;
     int arr[N];
     for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
     scanf("%d",K);
+
+    K=K%N;
 
     rotate(arr,0,N-1);
     rotate(arr,0,K-1);
