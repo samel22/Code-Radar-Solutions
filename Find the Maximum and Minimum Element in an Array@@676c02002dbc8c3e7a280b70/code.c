@@ -1,27 +1,18 @@
-void max(int n,int arr[]){
-    int intmax=arr[0];
-    int intmin=arr[0];
-    for(int i=0;i<n;i++){
-        if(arr[i]>intmax){
-            intmax=arr[i];
+#include <stdio.h>
+#include <limits.h>
+int main() {
+      int N;
+      scanf("%d",&N);
+      for(int i=0;i<N;i++){
+      scanf("%d",&arr[i]);
+      }
+      
+      int max=INT_MIN;
+      for(int i=0;i<3;i++){
+          if (max<arr[i]){
+              max=arr[i];
+          }
 
-        }
-
-        else if(arr[i]<intmin){
-            intmin=arr[i];
-        }
-    }
-    printf("%d %d",intmin,intmax);
-
+      }
+      printf("%d",max);
 }
-
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-
-    max(n.arr);
-    }
