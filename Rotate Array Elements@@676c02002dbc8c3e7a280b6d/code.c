@@ -17,8 +17,8 @@ void display(int arr[], int N){
 
 int main(){
     int N,K;
-    int mid=N/2;
     scanf("%d",&N);
+    int mid=N/2;
     int arr[N];
     for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
