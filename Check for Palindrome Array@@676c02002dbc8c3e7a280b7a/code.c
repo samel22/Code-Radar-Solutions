@@ -1,5 +1,5 @@
 #include <stdio.h>
-void pal(int arr[], int n){
+void pal(int arr[], int N){
     int i=0,j=n-1, ispal=1;
     while(i<j){
         if(arr[i] != arr[j]){
@@ -20,12 +20,10 @@ void pal(int arr[], int n){
 }
 
 int main() {
-      int n;
-      printf("enter n");
-      scanf("%d",&n);
-      int arr[n];
-      for(int i=0;i<=n-1;i++){
-          printf("enter arr element %d ",i+1);
+      int N;
+      scanf("%d",&N);
+      int arr[N];
+      for(int i=0;i<=N-1;i++){
           scanf("%d",&arr[i]);
       }
 
