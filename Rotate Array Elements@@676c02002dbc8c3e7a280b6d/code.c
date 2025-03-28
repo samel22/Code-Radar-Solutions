@@ -27,5 +27,5 @@ int main(){
 
     rotate(arr,0,N-1);
     rotate(arr,0,mid-1);
-    rotate(arr,mid-1;N-1);
+    rotate(arr,mid-1,N-1);
 }
