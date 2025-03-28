@@ -26,8 +26,8 @@ int main(){
     scanf("%d",K);
 
     rotate(arr,0,N-1);
-    rotate(arr,0,mid-1);
-    rotate(arr,mid-1,N-1);
+    rotate(arr,0,K-1);
+    rotate(arr,K,N-1);
 
     display(arr,N);
 }
