@@ -1,9 +1,11 @@
 #include <stdio.h>
-void find(int arr[],N,target){
+void find(int arr[],int N,int target){
     for(int i=0;i<N;i++){
         if(arr[i]==target){
             printf("%d",i);
         }
+
+        else printf("-1");
     }
 }
 
