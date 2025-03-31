@@ -18,7 +18,9 @@ int main(){
     scanf("%d",&N);
 
     int arr[N];
-    scanf("%d",&arr[N]);
+     for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+    }
 
     int T;
     scanf("%d",&T);
