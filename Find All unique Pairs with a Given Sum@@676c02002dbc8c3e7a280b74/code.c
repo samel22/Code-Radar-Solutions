@@ -5,7 +5,7 @@ void find(int arr[], int N, int T){
         for(int j=i+1;j<N;j++){
             if(arr[i] != arr[j]){
                 if(arr[i]+arr[j]==T){
-                    printf("%d %d",i,j);
+                    printf("%d %d\n",i,j);
                 }
             }
         }
