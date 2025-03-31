@@ -1,3 +1,4 @@
+#include <stdio.h>
 void find(int arr[],N,target){
     for(int i=0;i<N;i++){
         if(arr[i]==target){
