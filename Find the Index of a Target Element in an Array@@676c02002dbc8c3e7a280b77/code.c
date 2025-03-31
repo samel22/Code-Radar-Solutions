@@ -11,7 +11,7 @@ void find(int arr[],int N,int target){
 
 int main(){
     int target,N;
-    scanf("%d",N);
+    scanf("%d",&N);
 
     int arr[N];
 
