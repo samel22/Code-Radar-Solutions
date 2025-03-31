@@ -1,4 +1,4 @@
-int find(){
+int find(int arr[], int N, int T){
 
     for(int i=0;i<N;i++){
         for(int j=i+1;j<N;j++){
@@ -21,4 +21,6 @@ int main(){
 
     int T;
     scanf("%d",&T);
+
+    find(arr,N,T);
 }
