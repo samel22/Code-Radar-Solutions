@@ -3,15 +3,14 @@ void find(int arr[], int N, int T){
 
     for(int i=0;i<N;i++){
         for(int j=i+1;j<N;j++){
-            if(arr[i] != arr[j]){
-                if(arr[i]+arr[j]==T){
+            if(arr[i] != arr[j] && (arr[i]+arr[j]==T)){
                     printf("%d %d\n",i,j);
                 }
             }
         }
     }
 
-}
+
 
 int main(){
     int N;
