@@ -1,4 +1,4 @@
-##include <stdio.h>
+#include <stdio.h>
 
 int isSorted(int arr[], int N) {
     for (int i = 0; i < N - 1; i++) {
