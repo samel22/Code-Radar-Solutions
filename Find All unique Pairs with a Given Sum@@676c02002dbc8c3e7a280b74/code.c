@@ -1,4 +1,5 @@
-int find(int arr[], int N, int T){
+#include <stdio.h>
+void find(int arr[], int N, int T){
 
     for(int i=0;i<N;i++){
         for(int j=i+1;j<N;j++){
