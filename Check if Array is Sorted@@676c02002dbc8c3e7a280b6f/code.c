@@ -14,11 +14,11 @@ int main() {
     scanf("%d", &N); // Corrected input
 
     int arr[N]; // Variable length array (VLA)
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
 
-    if (isSorted(arr, n)) {
+    if (isSorted(arr, N)) {
         printf("Sorted\n");
     } else {
         printf("Not Sorted\n");
