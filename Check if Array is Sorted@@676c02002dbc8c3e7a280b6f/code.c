@@ -1,32 +1,28 @@
-#include <stdio.h>
-#include <stdbool.h>
-void bubbleSort(int arr[],int n){
-    int flag;
-    for(int i=0;i<n-1;i++){
-        flag=false;
-        for(int j=0;j<n-i-1;j++){
-            if(arr[j]>arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-                flag=true;
-            }
+##include <stdio.h>
+
+int isSorted(int arr[], int N) {
+    for (int i = 0; i < N - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            return 0; // Not sorted
         }
     }
-
+    return 1; // Sorted
 }
 
-void check(int flag){
-    if(flag == true) printf("Not Sorted");
-    else printf("Sorted");
-}
+int main() {
+    int N;
+    scanf("%d", &N); // Corrected input
 
-int main(){
-    int n;
-    scanf("%d",n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    int arr[N]; // Variable length array (VLA)
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
+    if (isSorted(arr, n)) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
+    }
+
+    return 0;
 }
