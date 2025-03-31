@@ -29,5 +29,4 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    inc(n,arr);
 }
