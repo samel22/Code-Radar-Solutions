@@ -5,8 +5,8 @@ void find(int arr[],int N,int target){
             printf("%d",i);
         }
 
-        else printf("-1");
     }
+    printf("-1");
 }
 
 int main(){
