@@ -1,12 +1,12 @@
 int binarySearch(int arr[], int n, int target){
-    for(int i=0;i<n-1;i++){
-        for(int j=0;j<n-1;j++){
-            if(arr[j]>arr[j+1]){
-                int temp=arr[j];
-                arr[j+1]=arr[j];
-                temp=arr[j+1];
-            }
-        }
+    int low=0, high=n-1;
+    while(i<j){
+        if(arr[mid]==target) return mid;
+
+        else if(arr[mid]<target) low=mid+1;
+
+        else hight=mid-1;
     }
+    return -1;
 
 }
