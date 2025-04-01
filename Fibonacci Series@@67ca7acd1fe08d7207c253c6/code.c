@@ -1,10 +1,6 @@
 #include <stdio.h>
 int fibonacciSeries(int n){
-for(int i=1;i<=n;i++){
-    int n1=0, n2=1;
-    int curr=n1+n2;
-    printf("%d",curr);
-    n2=n1;
-    n1=curr;
-}
+    if(n==0 || n==1) return n;
+
+    else return fibonacciSeries(n-1) +fibonacciSeries(n-2);
 }
