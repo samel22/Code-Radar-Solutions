@@ -6,7 +6,7 @@ int binarySearch(int arr[], int n, int target){
 
         else if(arr[mid]<target) low=mid+1;
 
-        else hight=mid-1;
+        else high=mid-1;
     }
     return -1;
 
