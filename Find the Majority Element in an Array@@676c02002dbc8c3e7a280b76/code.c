@@ -6,7 +6,6 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-
     int candidate=-1, count;
     for(int i=0;i<N;i++){
         count=0;
@@ -15,10 +14,7 @@ int main(){
                 count++;
             }
         }
-    }
-
-    for(int i=0;i<N;i++){
-         if(count>N/2) printf("%d",arr[i]);
+        if(count>N/2) printf("%d",arr[i]);
     }
 
 }
