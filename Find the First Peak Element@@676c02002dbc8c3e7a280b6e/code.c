@@ -5,7 +5,7 @@ int check(int arr[],int N){
             //printf("%d",arr[i]);
             return arr[i];
         }
-        return -1;
+        else return -1;
     }
 
 }
