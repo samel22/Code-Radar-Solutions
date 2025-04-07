@@ -1,3 +1,4 @@
+#include <stdio.h>
 int check(int num){
     
         if(num<2) return 0;
