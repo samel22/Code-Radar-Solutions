@@ -6,7 +6,7 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
-    int candidate=-1, count;
+    int count;
     for(int i=0;i<N;i++){
         count=0;
         for(int j=0;j<N;j++){
