@@ -18,7 +18,7 @@ int main(){
             printf("%d\n",arr[i]);
             return 0;
         }
-        printf("-1");
     }
+    printf("-1");
 
 }
