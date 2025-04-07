@@ -3,12 +3,12 @@ int check(int num){
     
         if(num<2) return 0;
         for(int i=2;i*i<num;i++){
-            if(num%i==0) return 0;
+            if(num%i==0) {
+                return 0;
+            }
             else return 1;
         }
     }
-
-
 int count(int N, int arr[]){
     int count=0;
     for(int i=0;i<N;i++){
@@ -25,7 +25,4 @@ int main(){
 
     int result=count(N,arr);
     printf("%d",result);
-
-
-    
 }
