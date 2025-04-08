@@ -10,7 +10,7 @@ int maxproduct(int N, int arr[]){
         }
 
     }
-    printf("%d",product);
+    printf("%d",maxpr);
 }
 
 int main(){
