@@ -1,8 +1,15 @@
 #include <stdio.h>
 #include <limits.h>
-int sec(int N,int arr[]){
+void sec(int N,int arr[]){
+
     int min=INT_MAX;
     int smin=INT_MAX;
+
+      if (N < 2) {
+        printf("-1\n");
+        return;
+    }
+
     for(int i=0;i<N;i++){
         if(min>arr[i]){
             smin=min;
