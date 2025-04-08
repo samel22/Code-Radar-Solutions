@@ -1,20 +1,33 @@
-int pal(int N,int arr[]){
-    int count=0, start=0,end=N-1;
-    while(i<j){
-        if(arr[i]==arr[j]){
-            count++;
-        }
-        i++;
-        j--;
+#include <stdio.h>
+int isPalindrome(int num) {
+    int original = num, reversed = 0;
+
+    while (num > 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num = num / 10;
     }
-    printf("%d",count);
+
+    return original == reversed;
 }
 
-int main(){
+int main() {
     int N;
-    scanf("%d",&N);
+    scanf("%d", &N);
     int arr[N];
-    for(int i=0;i<N;i++){
-    scanf("%d",&arr[i]);
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
     }
+
+    int count = 0;
+    for (int i = 0; i < N; i++) {
+        if (isPalindrome(arr[i])) {
+            count++;
+        }
+    }
+
+    printf("%d",count);
+
+    return 0;
 }
