@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
-int min(int N, int arr[]){
+void min(int N, int arr[]){
 
      if (N < 2) {//size of array is less than 2
         printf("-1");
