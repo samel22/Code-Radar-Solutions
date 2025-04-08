@@ -1,3 +1,4 @@
+#include <stdio.h>
 int sumofdigits(int num){
     int sum=0;
     while(num!=0){
