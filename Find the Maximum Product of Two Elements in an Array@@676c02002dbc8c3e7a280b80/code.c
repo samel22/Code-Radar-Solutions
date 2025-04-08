@@ -1,3 +1,4 @@
+#include <stdio.h>
 int maxproduct(int N, int arr[]){
     int maxpr=arr[0]*arr[1];
     for(int i=0;i<N;i++){
