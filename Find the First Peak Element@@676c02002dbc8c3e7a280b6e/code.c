@@ -1,5 +1,5 @@
 #include <stdio.h>
-int FindPeakElement(int[] arr, int N) {
+int FindPeakElement(int arr[], int N) {
 
         // Edge case: only one element
         if (N == 1) return 0;
