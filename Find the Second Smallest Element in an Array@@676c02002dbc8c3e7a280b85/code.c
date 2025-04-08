@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
-int sec(){
+int sec(int N,int arr[]){
     int min=INT_MAX;
     int smin=INT_MAX;
     for(int i=0;i<N;i++){
@@ -13,7 +13,7 @@ int sec(){
     printf("%d",smin);
 }
 int main(){
-    int target,N;
+    int N;
     scanf("%d",&N);
 
     int arr[N];
@@ -21,4 +21,5 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d",&arr[i]);
     }
+    sec(N,arr);
 }
