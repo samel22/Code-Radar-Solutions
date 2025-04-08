@@ -1,39 +1,24 @@
 #include <stdio.h>
-int check(int N, int arr[]){
-    int element=0, count=0;
-    for(int i=0;i<N;i++){
-        if(count==0){
-            element=arr[i];
-        }
 
-        if(element==arr[i]){
-            count++;
-        }
+int main() {
+    int N;
+    scanf("%d", &N);
+    int arr[N];
+    int freq[1000] = {0}; // Assuming numbers are between 0–999
 
-        else{
-            count--;
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+        freq[arr[i]]++;  // count frequency
+    }
+
+    int maxFreq = 0, result = 1000;
+    for (int i = 0; i < 1000; i++) {
+        if (freq[i] > maxFreq) {
+            maxFreq = freq[i];
+            result = i;
         }
     }
-    return element;
-    // count=0;
-    // for(int i=0;i<N;i++){
-    //     if(element==arr[i]){
-    //         count++;
-    //     }
-    // }
 
-//     if(count>N){
-//         return element;
-//     }
-//     return -1;
-
- }
-
-int main(){
-    int N;
-    scanf("%d",&N);
-    int arr[N];
-    for(int i=0;i<N;i++) scanf("%d",&arr[i]);
-    int result=check(N,arr);
-    printf("%d",result);
+    printf("%d\n", result);
+    return 0;
 }
