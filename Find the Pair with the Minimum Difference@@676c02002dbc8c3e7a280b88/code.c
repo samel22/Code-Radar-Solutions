@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+#include <stdlib.h>
 void min(int N, int arr[]){
 
      if (N < 2) {//size of array is less than 2
