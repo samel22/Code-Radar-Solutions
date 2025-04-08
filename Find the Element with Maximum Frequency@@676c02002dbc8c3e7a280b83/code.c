@@ -27,7 +27,7 @@ int check(int N, int arr[]){
 //     }
 //     return -1;
 
-// }
+ }
 
 int main(){
     int N;
