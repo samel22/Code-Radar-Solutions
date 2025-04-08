@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 int min(int N, int arr[]){
 
      if (N < 2) {//size of array is less than 2
@@ -24,7 +25,7 @@ int min(int N, int arr[]){
     else
         printf("%d %d\n", b, a);
 }
-}
+
 
 int main(){
     int N;
