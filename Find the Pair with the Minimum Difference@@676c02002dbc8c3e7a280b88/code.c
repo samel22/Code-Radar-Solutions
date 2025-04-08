@@ -1,5 +1,5 @@
 #include <stdio.h>
-int min(){
+int min(int N, int arr[]){
     int mindiff=arr[0]-arr[1];
     for(int i=0;i<N;i++){
         for(int j=i+1;j<N;j++){
@@ -19,4 +19,5 @@ int main(){
     for(int i=0;i<N;i++){
     scanf("%d",&arr[i]);
     }
+    min(N,arr);
     }
