@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 int sec(){
     int min=INT_MAX;
     int smin=INT_MAX;
