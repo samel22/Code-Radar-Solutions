@@ -5,11 +5,6 @@ void sec(int N,int arr[]){
     int min=INT_MAX;
     int smin=INT_MAX;
 
-      if (N < 2) {
-        printf("-1\n");
-        return;
-    }
-
     for(int i=0;i<N;i++){
         if(min>arr[i]){
             smin=min;
@@ -21,7 +16,11 @@ void sec(int N,int arr[]){
             smin = arr[i];
         }
     }
-    printf("%d",smin);
+    if (smin == INT_MAX) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", smin);
+    }
 }
 int main(){
     int N;
