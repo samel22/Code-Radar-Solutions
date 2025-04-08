@@ -9,6 +9,10 @@ int sec(int N,int arr[]){
             min=arr[i];
 
         }
+
+         else if (arr[i] < smin && arr[i] != min) {
+            smin = arr[i];
+        }
     }
     printf("%d",smin);
 }
