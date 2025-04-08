@@ -1,3 +1,4 @@
+#include <stdio.h>
 int check(int N, int arr[]){
     int element=0, count=0;
     for(int i=0;i<N;i++){
