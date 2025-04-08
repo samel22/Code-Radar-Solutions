@@ -20,10 +20,10 @@ int min(int N, int arr[]){
             }
         }
     }
-     if (a < b) //print in ascending order
-        printf("%d %d\n", a, b);
+     if (mini < minj) //print in ascending order
+        printf("%d %d\n", mini, minj);
     else
-        printf("%d %d\n", b, a);
+        printf("%d %d\n", minj, mini);
 }
 
 
