@@ -1,11 +1,17 @@
 #include <stdio.h>
 int min(int N, int arr[]){
-    int mindiff=arr[0]-arr[1];
-    int mini=arr[0];
-    int minj=arr[1];
+
+     if (N < 2) {//size of array is less than 2
+        printf("-1");
+        return;
+    }
+
+    int mindiff=INT_MAX;
+    int mini=0;
+    int minj=0;
     for(int i=0;i<N;i++){
         for(int j=i+1;j<N;j++){
-            int diff=arr[i]-arr[j];
+            int diff=abs(arr[i]-arr[j]);
             if(diff<mindiff){
                 mindiff=diff;
                 mini=arr[i];
@@ -13,7 +19,11 @@ int min(int N, int arr[]){
             }
         }
     }
-    printf("%d %d",mini, minj);
+     if (a < b) //print in ascending order
+        printf("%d %d\n", a, b);
+    else
+        printf("%d %d\n", b, a);
+}
 }
 
 int main(){
