@@ -2,10 +2,10 @@
 int FindPeakElement(int arr[], int N) {
 
         // Edge case: only one element
-        if (N == 1) return 0;
+        if (N == 1) return arr[0];
 
         // Check first element
-        if (arr[0] >= arr[1]) return 0; //first element > second element
+        if (arr[0] >= arr[1]) return arr[0]; //first element > second element
 
         // Check last element
         if (arr[N - 1] >= arr[N - 2]) return arr[N - 1]; //last element>second last(should be) then return last element
