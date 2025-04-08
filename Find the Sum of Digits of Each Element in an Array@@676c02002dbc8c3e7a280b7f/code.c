@@ -18,7 +18,7 @@ int main(){
     }
 
     for(int i=0;i<N;i++){
-    int sumdigit=sumofdigits(arr[i]);
-    printf(" %d",sumdigit);
+    int sumdigit=sumofdigits(arr[i]); //passing arr[0],arr[1],arr[2] to sum function
+    printf("%d ",sumdigit);
     }
 }
