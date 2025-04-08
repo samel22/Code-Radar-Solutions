@@ -14,19 +14,20 @@ int check(int N, int arr[]){
             count--;
         }
     }
-    count=0;
-    for(int i=0;i<N;i++){
-        if(element==arr[i]){
-            count++;
-        }
-    }
+    return element;
+    // count=0;
+    // for(int i=0;i<N;i++){
+    //     if(element==arr[i]){
+    //         count++;
+    //     }
+    // }
 
-    if(count>N){
-        return element;
-    }
-    return -1;
+//     if(count>N){
+//         return element;
+//     }
+//     return -1;
 
-}
+// }
 
 int main(){
     int N;
