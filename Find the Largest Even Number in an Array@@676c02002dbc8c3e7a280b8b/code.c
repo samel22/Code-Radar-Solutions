@@ -7,7 +7,13 @@ int lar(int N,int arr[]){
             max=arr[i];   
         }
     }
-    printf("%d",max);
+    //printf("%d",max);
+    if (max== INT_MIN) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", max);
+    }
+
 }
 
 int main(){
