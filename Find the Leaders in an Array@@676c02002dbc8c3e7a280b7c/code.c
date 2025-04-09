@@ -8,11 +8,13 @@ int leader(int N, int arr[]){
                 break;
             }
         }
-    }
 
-      if(isleader) {
+         if(isleader) {
             printf("%d ", arr[i]);
         }
+    }
+
+     
     }
 
 int main(){
