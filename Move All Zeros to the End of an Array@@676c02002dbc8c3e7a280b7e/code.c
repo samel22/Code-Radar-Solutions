@@ -1,3 +1,4 @@
+#include <stdio.h>
 void moveZeroes(int nums[], int numsSize) {
     int insertpos=0; //nums = [0, 1, 0, 3, 12]
 
