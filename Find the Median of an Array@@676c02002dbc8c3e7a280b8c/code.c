@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-void sort(int arr[], int N) {
-    for(int i = 0; i < N - 1; i++) {
-        for(int j = i + 1; j < N; j++) {
+// Helper function to sort the array
+void sort(int arr[], int n) {
+    for(int i = 0; i < n - 1; i++) {
+        for(int j = i + 1; j < n; j++) {
             if(arr[i] > arr[j]) {
                 int temp = arr[i];
                 arr[i] = arr[j];
@@ -13,23 +14,23 @@ void sort(int arr[], int N) {
 }
 
 int main() {
-    int N;
-    scanf("%d", &N);
-    int arr[N];
+    int n;
+    scanf("%d", &n);
+    int arr[n];
 
-    for(int i = 0; i < N; i++) {
+    for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    sort(arr, N);
+    sort(arr, n);
 
-    float median;
-    if(N % 2 == 1) {
-        median = arr[N / 2];
+    int median;
+    if(n % 2 == 1) {
+        median = arr[n / 2];
     } else {
-        median = (arr[N / 2 - 1] + arr[N / 2]) / 2.0;
+        median = (arr[n / 2 - 1] + arr[n / 2]) / 2;
     }
 
-    printf("%d\n", median);  // Print without decimal
+    printf("%d\n", median);
     return 0;
 }
