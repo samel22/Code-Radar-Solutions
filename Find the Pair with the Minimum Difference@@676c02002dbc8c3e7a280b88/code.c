@@ -1,39 +1,41 @@
 #include <stdio.h>
-#include <limits.h>
 #include <stdlib.h>
-void min(int N, int arr[]){
 
-     if (N < 2) {//size of array is less than 2
+void findMinDiffPair(int N, int arr[]) {
+    if (N < 2) {
         printf("-1");
         return;
     }
 
-    int mindiff=INT_MAX;
-    int mini=0;
-    int minj=0;
-    for(int i=0;i<N;i++){
-        for(int j=i+1;j<N;j++){
-            int diff=abs(arr[i]-arr[j]);
-            if(diff<mindiff){
-                mindiff=diff;
-                mini=arr[i];
-                minj=arr[j];
+    int minDiff = abs(arr[0] - arr[1]);
+    int a = arr[0], b = arr[1];
+
+    for (int i = 0; i < N; i++) {
+        for (int j = i + 1; j < N; j++) {
+            int diff = abs(arr[i] - arr[j]);
+
+            int x = arr[i], y = arr[j];
+            if (x > y) { int temp = x; x = y; y = temp; } // sort the pair in ascending order
+
+            if (diff < minDiff || (diff == minDiff && (x < a || (x == a && y < b)))) {
+                minDiff = diff; //if we find another pair which has same mindiff as current pair but numbers of that pair< current pair then we use that pair
+                a = x;
+                b = y;
             }
         }
     }
-     if (mini < minj) //print in ascending order
-        printf("%d %d\n", mini, minj);
-    else
-        printf("%d %d\n", minj, mini);
+
+    printf("%d %d\n", a, b);
 }
 
-
-int main(){
+int main() {
     int N;
-    scanf("%d",&N);
+    scanf("%d", &N);
     int arr[N];
-    for(int i=0;i<N;i++){
-    scanf("%d",&arr[i]);
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
     }
-    min(N,arr);
-    }
+
+    findMinDiffPair(N, arr);
+}
