@@ -1,17 +1,39 @@
 #include <stdio.h>
-void mid(int n, int arr[]){
-    int med=(0+n-1)/2;
-    printf("%d",arr[med]);
 
+void sort(int arr[], int N) {
+    // Simple bubble sort
+    for(int i = 0; i < N - 1; i++) {
+        for(int j = i + 1; j < N; j++) {
+            if(arr[i] > arr[j]) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
 }
 
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+float findMedian(int arr[], int N) {
+    sort(arr, N);  // Sort array first
+
+    if(N % 2 == 1) {
+        return arr[N / 2]; // Middle element is center
+    } else {
+        return (arr[N / 2 - 1] + arr[N / 2]) / 2.0; // Average of two middle if N!/2
     }
-    mid(n,arr);
+}
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    int arr[N];
+
+    for(int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    float median = findMedian(arr, N);
+    printf("%.1f\n", median);
+
     return 0;
 }
