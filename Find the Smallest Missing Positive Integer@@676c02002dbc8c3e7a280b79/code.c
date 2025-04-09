@@ -30,4 +30,7 @@ int main(){
     for(int i=0;i<N;i++){
     scanf("%d",&arr[i]);
     }
+
+    int result=firstMissingPositive(N,arr);
+    printf("%d",result);
 }
