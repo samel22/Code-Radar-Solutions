@@ -33,7 +33,7 @@ int main() {
     }
 
     float median = findMedian(arr, N);
-    printf("%.1f\n", median);
+    printf("%d", median);
 
     return 0;
 }
