@@ -1,13 +1,10 @@
 #include <stdio.h>
-int run(int N, int arr[]){
-    for(int i=0;i<N;i++){
-        int sum=0;
-        for(int j=0;j<=i;j++){
-            sum+=arr[j];
-            arr[i]=sum;
-        }
+void run(int N, int arr[]) {
+    for (int i = 1; i < N; i++) {
+        arr[i] += arr[i - 1];  // add previous sum to current
     }
 }
+
 
 int main(){
     int N;
