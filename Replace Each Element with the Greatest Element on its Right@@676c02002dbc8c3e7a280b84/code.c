@@ -1,4 +1,5 @@
-void replace(){
+#include <stdio.h>
+void replace(int N,int arr[]){
     for(int i=0;i<N;i++){
         if(arr[i+1]>arr[i]){
             arr[i]=arr[i+1];
@@ -13,4 +14,10 @@ int main(){
     for(int i=0;i<N;i++){
     scanf("%d",&arr[i]);
     }
+
+    replace(N,arr);
+     for(int i=0;i<N;i++){
+    printf("%d",arr[i]);
+    }
+
 }
