@@ -29,7 +29,7 @@ int main(){
     moveZeroes(nums,numsSize);
 
     for(int i=0;i<numsSize;i++){
-        printf(" %d",nums[i]);
+        printf("%d ",nums[i]);
     }
 
 
