@@ -23,7 +23,7 @@ int main(){
     scanf("%d",&numsSize);
     int nums[numsSize];
     for(int i=0;i<numsSize;i++){
-        scanf("%d",&nums[numsSize]);
+        scanf("%d",&nums[i]);
     }
 
     moveZeroes(nums,numsSize);
