@@ -1,7 +1,7 @@
 #include <stdio.h>
 void leader(int N, int arr[]){
-    int isleader=1;
     for(int i=0;i<N;i++){
+        int isleader=1;
         for(int j=i+1;j<N;j++){
             if(arr[i]<arr[j]){
                 isleader=0;
