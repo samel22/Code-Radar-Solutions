@@ -24,4 +24,12 @@ int main(){
     for(int i=0;i<numsSize;i++){
         scanf("%d",&nums[numsSize]);
     }
+
+    moveZeroes(nums,numsSize);
+
+    for(int i=0;i<numsSize;i++){
+        printf("%d",nums[numsSize]);
+    }
+
+
 }
