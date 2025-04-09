@@ -22,9 +22,9 @@ int main() {
     }
 
     if (isMonotonic(arr, N))
-        printf("Monotonic\n");
+        printf("YES");
     else
-        printf("Not Monotonic\n");
+        printf("NO");
 
 
     return 0;
