@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int rev(int str[], int L){
+void rev(int str[], int L){
     for(int i=0,j=L-1;i<=j;i++,j--){
         int temp = str[i];
         str[i]=str[j];
@@ -12,7 +12,7 @@ int rev(int str[], int L){
 
 int main(){
     char str[100];
-    scanf("%s",&str);
+    scanf("%s",str);
 
     int L=strlen(str);
 
