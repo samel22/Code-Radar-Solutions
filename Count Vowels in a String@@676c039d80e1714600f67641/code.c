@@ -3,7 +3,7 @@
 void vow(char str[], int N){
     int count=0;
     for(int i=0;i<N;i++){
-        if(str[i] == 'a' || 'A' || 'e' || 'E' || 'i'' || 'I'' || 'O' || 'o' || 'u' || 'U'){
+        if(str[i] == 'a' || str[i] =='A' || str[i] =='e' || str[i] =='E' || str[i] =='i'' || str[i] =='I'' || str[i] =='O' || str[i] =='o' || str[i] =='u' || str[i] =='U'){
             count++; 
         }
     }
