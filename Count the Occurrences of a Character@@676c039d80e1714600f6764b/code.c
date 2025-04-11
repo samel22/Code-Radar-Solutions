@@ -13,7 +13,7 @@ int replace(char a, char str[]){
 int main(){
     char str[100], a,b;
     scanf("%s", str);        // Read string
-    scanf(" %c", &a);        // Read char to replace (space before %c handles newline)     // 
+    scanf("%c", &a);        // Read char to replace (space before %c handles newline)     // 
 
     replace(a,str);
 
