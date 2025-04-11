@@ -7,7 +7,7 @@ int replace(char a, char str[]){
             count++;
         }
     }
-    printf("%c",count);
+    printf("%d",count);
 }
 
 int main(){
