@@ -15,4 +15,6 @@ int main(){
     char str[100];
     scanf("%d",str);
     int N=strlen(str);
+
+    vow(str,N);
 }
