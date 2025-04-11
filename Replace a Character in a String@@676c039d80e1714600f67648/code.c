@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int replace(){
+int replace(char a, char b){
     for(int i=0;str[i]!='\0';i++){
         if(str[i]==a){
             str[i]=b;
@@ -14,5 +14,7 @@ int main(){
     scanf("%s",str);
     scanf("%c",a);
     scanf("%c",b);
+
+    replace(a,b);
 
 }
