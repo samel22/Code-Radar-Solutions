@@ -13,7 +13,7 @@ void vow(char str[], int N){
 
 int main(){
     char str[100];
-    scanf("%c",str);
+    scanf("%s",str);
     int N=strlen(str);
 
     vow(str,N);
