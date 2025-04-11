@@ -11,9 +11,9 @@ int replace(char a, char b, char str[]){
 
 int main(){
     char str[100], a,b;
-    scanf("%s",str);
-    scanf("%s",a);
-    scanf("%s",b);
+     scanf("%s", str);        // Read string
+    scanf(" %c", &a);        // Read char to replace (space before %c handles newline)
+    scanf(" %c", &b);        // 
 
     replace(a,b,str);
 
