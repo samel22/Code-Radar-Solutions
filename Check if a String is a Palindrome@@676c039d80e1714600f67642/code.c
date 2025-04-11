@@ -10,11 +10,11 @@ void palindrome(char str[], int N){
     }
 
     if(!ispal){
-        printf("NO");
+        printf("No");
     }
 
     else{
-        printf("YES");
+        printf("Yes");
     }
 }
 
