@@ -20,9 +20,9 @@
 
 // }
 int main(){
-    char s[100],rev[100];
+    char s[100];
     gets(s);
-    strcpy(rev,s);
+    // strcpy(rev,s);
     strrev(rev);
     printf("%s",rev);
 }
