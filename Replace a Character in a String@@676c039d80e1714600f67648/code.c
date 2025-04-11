@@ -12,8 +12,8 @@ int replace(char a, char b, char str[]){
 int main(){
     char str[100], a,b;
     scanf("%s",str);
-    scanf("%c",a);
-    scanf("%c",b);
+    scanf("%s",a);
+    scanf("%s",b);
 
     replace(a,b,str);
 
