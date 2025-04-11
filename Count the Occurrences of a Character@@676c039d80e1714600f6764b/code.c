@@ -15,6 +15,6 @@ int main(){
     scanf("%s", str);        // Read string
     scanf(" %c", &a);        // Read char to replace (space before %c handles newline)     // 
 
-    replace(a,b,str);
+    replace(a,str);
 
 }
