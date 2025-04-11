@@ -20,7 +20,7 @@ void palindrome(char str[], int N){
 
 int main(){
     char str[100];
-    scanf("%d",str);
+    scanf("%s",str);
     int N=strlen(str);
 
     palindrome(str,N);
