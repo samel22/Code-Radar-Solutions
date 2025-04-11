@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void rev(int str[], int L){
+void rev(char str[], int L){
     for(int i=0,j=L-1;i<=j;i++,j--){
         int temp = str[i];
         str[i]=str[j];
